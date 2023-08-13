@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+// import { ReactDOM } from "react";
+// import { Browse Has} from "react-router-dom";
+import "./App.css";
+import Navbar from "./Navbar";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import { News } from "./pages/News";
+import Searchimg from "./pages/Searchimg";
+import Effect from "./Effect";
+import About from "./pages/About";
+import Sports from "./pages/Sports";
+import Business from "./pages/Business";
+import Entertainment from "./pages/Entertainment";
+import Health from "./pages/Health";
+import Science from "./pages/Science";
 
-function App() {
+let App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Effect />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Today-News" element={<News />} />
+        <Route path="/Sports-News" element={<Sports />} />
+        <Route path="/Business-News" element={<Business />} />
+        <Route path="/Entertainment-News" element={<Entertainment />} />
+        <Route path="/Health-News" element={<Health />} />
+        <Route path="/Science-News" element={<Science />} />
+        <Route path="/Search-News" element={<Searchimg />} />
+        <Route path="/Live-TV" element={<Home />} />
+        <Route path="/About-us" element={<About />} />
+      </Routes>
     </div>
   );
-}
-
+};
 export default App;
