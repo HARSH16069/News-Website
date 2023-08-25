@@ -71,7 +71,7 @@ body {
 }
 .navbar-news {
   width: 100vw;
-  position: absolute;
+  /* position: absolute; */
 
   padding: 15px 0;
   text-align: center;
@@ -286,6 +286,6 @@ body {
 }
 @media (max-width: 712px) {
   .navbar-news {
-    margin-top: 50px; 
+    margin-top: 50px;
   }
 }

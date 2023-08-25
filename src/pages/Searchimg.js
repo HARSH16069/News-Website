@@ -3,7 +3,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 import Card from "./Card";
 const Searchimg = () => {
   const [message, setMessage] = useState("");
-  let url = `https://newsapi.org/v2/everything?q=${message}&from=2023-07-013&sortBy=popularity&apiKey=6ba55b78e59b49a6a1038c9a34452e1a`;
+  let url = `https://newsapi.org/v2/everything?q=${message}&from=2023-08-025&sortBy=popularity&apiKey=6ba55b78e59b49a6a1038c9a34452e1a`;
   const handleChange = (event) => {
     setMessage(event.target.value);
 
