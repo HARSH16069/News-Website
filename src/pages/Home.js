@@ -5,7 +5,7 @@ import Card from "./Card";
 import img from "./1.jpg";
 const Home = (props) => {
   const url =
-    "https://newsapi.org/v2/everything?q=Apple&from=2023-08-025&sortBy=popularity&apiKey=6ba55b78e59b49a6a1038c9a34452e1a";
+    "https://newsapi.org/v2/everything?q=Apple&from=2023-08-026&sortBy=popularity&apiKey=6ba55b78e59b49a6a1038c9a34452e1a";
   return (
     <div>
       <div className="Home-flex">
